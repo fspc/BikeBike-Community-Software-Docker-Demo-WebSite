@@ -3,18 +3,28 @@
 <head>
 <meta charset="utf-8" />
 <title>Community Bike Software Demo Page</title>
-	<style>label {	
-		display: inline-block;  
-		text-align: right;
-		width: 100px;
-		font-weight: bold;
+	<script src="js/jquery-2.1.3.js"></script>   
+   <script src="js/bikebike.js"></script>
+	<style>
+		label {	
+			display: inline-block;  
+			text-align: right;
+			width: 160px;
+			font-weight: bold;
 		}
 		.quote {
 			font-style: italic;	
 		}
-		a
-		{
-		
+		input {
+			margin-left: 26px;
+		}
+		div > p {
+			margin-left: 26px;
+			width: 900px;
+		}
+		div > div {
+			margin-left: 26px;
+			width: 900px;
 		}
 		h1 {
 			color: blueviolet;		
@@ -28,6 +38,18 @@
 	<p>
 	<label>Demo Site:</label> <a href="http://ybdb.wvcompletestreets.org/">http://ybdb.wvcompletestreets.org</a>
 	</p>
+	<div id="ybdb">
+	<label>Docker Image:</label> <a href="https://registry.hub.docker.com/u/bikebike/ybdb/">https://registry.hub.docker.com/u/bikebike/ybdb/</a>
+	<br /><label>Repository being used:</label> <a href="https://github.com/fspc/Yellow-Bike-Database">https://github.com/fspc/Yellow-Bike-Database</a>
+	<br /><label>Initial source code:</label> <a href="http://austinyellowbike.org/about/special-projects/yellow-bike-hours-and-transaction-database/">yellow-bike-hours-and-transaction-database</a>
+	(Database dump date - 2014-07-24)
+	<br /><label>Additional Repositories</label>  There are additional repositories at GitHub that were created by Third Hand and PlanB.
+	Currently, they are not being developed or maintained.  The Community Bike Shop Database (below) is the newest code base from the Yellow Bike Project,
+	that is currently being developed. 
+	<br /><label>CBDB Repository</label> <a href="https://github.com/nwilkes2/CommunityBikeShopDB">https://github.com/nwilkes2/CommunityBikeShopDB</a>
+	(Repository created & database dump date - 2014-12-29)
+	</div>
+	<input type="submit" id="ybdb_button" value="Show More">	
 	
 	<h1>BikeBinder</h1>
 	<p><div class="quote">&ldquo;BikeBinder is Free Rides Inventory System application.&rdquo;</div></p>
@@ -36,6 +58,12 @@
 	<br /><label>Logins:</label> staff@freeridepgh.org, volunteer@freeridepgh.org
 	<br /><label>Password:</label> <em>password</em>
 	</p>
+	<div id="bikebinder">
+	<label>Docker Image:</label> <a href="https://registry.hub.docker.com/u/bikebike/bikebinder/">https://registry.hub.docker.com/u/bikebike/bikebinder/</a>
+	<br /><label>Repository:</label> <a href="https://github.com/FreeRidePGH/BikeBinder">https://github.com/FreeRidePGH/BikeBinder</a>
+   <br /><label>Related Repository:</label> <a href="https://github.com/zflat/label_gen-free_ride">https://github.com/zflat/label_gen-free_ride</a> (label generator)	
+	</div>
+	<input type="submit" id="bikebinder_button" value="Show More">
 	
 	<h1>BikeShed</h1>
 	<p><div class="quote">&ldquo;Bikeshed is Velocipede's User, Sales, and Bike Inventory Web App.&rdquo;</div></p>
@@ -43,14 +71,35 @@
 	<label>Demo Site:</label> <a href="http://bikeshed.wvcompletestreets.org/">http://bikeshed.wvcompletestreets.org</a>
 	<br /><label>Logins:</label> Test user buttons may be found at the bottom of the website page.
 	</p>
+	<div id="bikeshed">
+	<label>Docker Image:</label> <a href="https://registry.hub.docker.com/u/bikebike/bikebinder/">https://registry.hub.docker.com/u/bikebike/bikebinder/</a>
+	<br /><label>Repository:</label> <a href="https://github.com/spacemunkay/BikeShed">https://github.com/spacemunkay/BikeShed</a>	
+	</div>
+	<input type="submit" id="bikeshed_button" value="Show More">
 	
 	<h1>Freehub</h1>
 	<p><div class="quote">&ldquo;Freehub is a member and shop visit application implemented in Rails by the San Francisco Bike Kitchen.&rdquo;</div></p>
 	<p>
 	<label>Demo Site:</label> <a href="http://freehub.wvcompletestreets.org/">http://freehub.wvcompletestreets.org</a>
-	<br /><label>Logins:</label> greeter, sfbk, mechanic, scbc, cbi, admi
+	<br /><label>Logins:</label> greeter, sfbk, mechanic, scbc, cbi, admin
 	<br /><label>Password:</label> <em>test</em>
 	</p>
+	<div id="freehub">
+	<label>Docker Image:</label> <a href="https://registry.hub.docker.com/u/bikebike/freehub/">https://registry.hub.docker.com/u/bikebike/freehub/</a>
+	<br /><label>Repository:</label> <a href="https://github.com/asalant/freehub/wiki">https://github.com/asalant/freehub/wiki</a>		
+	</div>
+	<input type="submit" id="freehub_button" value="Show More">
+	
+	<h1>Bicycle Kitchen POS</h1>
+	<p><div class="quote">&ldquo;A custom point-of-sale program for the Mac.&rdquo;</div></p>
+	<p>	
+	<label>Info Page:</label> <a href="https://www.elance.com/samples/bicycle-kitchen-pos-custom-point-of-sale-program-mac-macos-mac-pos-point-of-sale/33178978/">view</a>
+	</p>	
+	<div id="bikekitchenpos">
+	<label>Repository:</label> <a href="https://github.com/jmoody/BicycleKitchenPOS">https://github.com/jmoody/BicycleKitchenPOS</a>		
+	</div>
+	<input type="submit" id="bikekitchenpos_button" value="Show More">	
+	
 
 </body>
 </html>
