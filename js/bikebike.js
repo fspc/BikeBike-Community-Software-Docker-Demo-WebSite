@@ -3,7 +3,7 @@ $(function(){
 	"use strict";
 
 	// extra information about each demo
-	var demos = ["ybdb", "bikebinder", "bikeshed", "freehub", "bikekitchenpos"];
+	var demos = ["ybdb", "bikebinder", "bikeshed", "freehub", "bikekitchenpos", "signinapp"];
 	
 	$.each(demos, function(key, value) { 
 		show_more($('#' + value), $('#' + value + '_button'));
