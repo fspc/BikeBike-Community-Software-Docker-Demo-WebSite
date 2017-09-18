@@ -4,4 +4,4 @@
 
 Just a simple website to provide links to demonstrations, and to inpire the community to get involved with the F/OSS process in whatever way possible.
 
-[http://bikebike.bikelover.org/](http://bikebike.wvcompletestreets.org/)
+[https://bike.bikelover.org/](http://bikebike.wvcompletestreets.org/)
